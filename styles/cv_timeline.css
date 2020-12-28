@@ -1,20 +1,3 @@
-/* COLORES TIMELINE FUENTE */
-
-.titulo {
-  color: dodgerblue;
-  font-weight: bold;
-}
-
-.curso {
-  color: midnightblue;
-  font-weight: bold;
-}
-
-.trabajo {
-  color: magenta;
-  font-weight: bold;
-}
-
 /* ARREGLOS DE ESPACIOS */
 
 section.cv h2, section.cv p, section.cv ul {

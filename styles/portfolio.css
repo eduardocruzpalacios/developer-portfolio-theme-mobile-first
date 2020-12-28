@@ -39,24 +39,6 @@ section.portfolio p {
     margin-bottom: 10px;
 }
 
-section.portfolio li {
-    margin-bottom: 10px;
-    text-decoration: none;
-}
-
-section.portfolio ul {
-    list-style-type: none;
-}
-
-section.portfolio a {
-    color: midnightblue;
-    text-decoration: none;
-}
-
-section.portfolio a:hover, section.portfolio a:visited {
-    color: magenta;
-}
-
 /* MQ TABLET CAJAS PORTFOLIO */
 
 @media screen and (min-width: 650px) and (max-width: 992px) {

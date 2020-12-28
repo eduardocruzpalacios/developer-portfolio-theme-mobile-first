@@ -2,7 +2,7 @@ section.contact {
     width: 100%;
     padding: 100px 0;
     z-index: -1;
-    }
+}
 
 section.contact h1 {
     text-align: center;
@@ -24,7 +24,6 @@ section.contact p {
 
 section.contact p label {
     margin-bottom: 5px;
-    font-size: 1em;
     color: white;
 }
 
@@ -35,7 +34,6 @@ input[type="text"], input[type="tel"], input[type="email"], textarea {
     border-bottom: 2px solid white;
     color: white;
     padding: 10px;
-    font-size: 1em;
 }
 
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
@@ -47,7 +45,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
 textarea {
     resize: vertical;
     height: 200px;
-    font-size: 1em;
 }
 
 input[type="submit"] {
@@ -58,7 +55,6 @@ input[type="submit"] {
     border: none;
     outline:none;
     border-radius: 30px;
-    font-size: 1em;
 }
 
 input[type="submit"]:hover {
