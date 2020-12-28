@@ -1,0 +1,42 @@
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    }
+
+footer div.rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+footer div.rrss i {
+    color: white;
+}
+
+footer h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+/* MQ TABLET CAJA BOTONES RRSS */
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    footer div.rrss {
+      width: 55%;
+    }
+}
+
+/* MQ PC CAJA BOTONES RRSS */
+  
+@media screen and (min-width: 993px) {
+    footer div.rrss {
+        width: 40%;
+      }
+}

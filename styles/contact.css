@@ -1,0 +1,98 @@
+section.contact {
+    width: 100%;
+    padding: 100px 0;
+    z-index: -1;
+    }
+
+section.contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.contact div.form_container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 40px;
+    background-color: #474e5d;
+}
+
+section.contact p {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 20px;
+}
+
+section.contact p label {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: white;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
+    background-color:dodgerblue;
+    outline: 0;
+    border: 2px solid white;
+}
+
+textarea {
+    resize: vertical;
+    height: 200px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: dodgerblue;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* MQ TABLET */
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    section.contact div.form_container {
+        width: 70%;
+        padding: 25px 50px;
+    }  
+      
+    section.contact p {
+        margin-bottom: 10px;
+    }
+    
+    section.contact p label {
+        margin-bottom: 2px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
+
+/* MQ PC */
+  
+@media screen and (min-width: 993px) {
+    section.contact div.form_container {
+        width: 50%;
+        padding: 50px 100px;
+    }
+}

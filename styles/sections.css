@@ -1,0 +1,23 @@
+section h1, section h2 {
+    text-align: center;
+}
+
+section h1 {
+    color: dodgerblue;
+}
+
+section h2 {
+    color: #474e5d;
+}
+
+/* MQ TABLET */
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    
+}
+
+/* MQ PC */
+  
+@media screen and (min-width: 993px) {
+    
+}

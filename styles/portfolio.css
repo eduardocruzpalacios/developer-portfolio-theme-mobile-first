@@ -1,0 +1,82 @@
+/* SECTION PORTFOLIO */
+
+section.portfolio {
+    width: 100%;
+    padding-top: 100px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+    z-index: 0;
+    }
+
+section.portfolio h1 {
+    grid-column: 1 / span 1;
+}
+
+section.portfolio article {
+    padding: 12%;
+    /* border: solid 2px #474e5d; ESTO ES PARA DELIMITAR LAS CAJAS*/
+}
+
+section.portfolio div {
+    margin-bottom: 25px;
+}
+
+section.portfolio img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+section.portfolio h2 {
+    margin-bottom: 20px;
+}
+
+section.portfolio p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.portfolio li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+section.portfolio ul {
+    list-style-type: none;
+}
+
+section.portfolio a {
+    color: midnightblue;
+    text-decoration: none;
+}
+
+section.portfolio a:hover, section.portfolio a:visited {
+    color: magenta;
+}
+
+/* MQ TABLET CAJAS PORTFOLIO */
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
+    section.portfolio {
+        grid-template-columns: 50% 50%;
+    }
+
+    section.portfolio h1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* MQ PC CAJAS PORTFOLIO */
+  
+@media screen and (min-width: 993px) {
+    section.portfolio {
+        grid-template-columns: 50% 50%;
+    }
+
+    section.portfolio h1 {
+        grid-column: 1 / span 2;
+    }
+}

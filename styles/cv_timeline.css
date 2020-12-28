@@ -1,0 +1,177 @@
+/* COLORES TIMELINE FUENTE */
+
+.titulo {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.curso {
+  color: midnightblue;
+  font-weight: bold;
+}
+
+.trabajo {
+  color: magenta;
+  font-weight: bold;
+}
+
+/* ARREGLOS DE ESPACIOS */
+
+section.cv h2, section.cv p, section.cv ul {
+  margin-bottom: 15px;
+}
+
+section.cv h1 {
+  margin-bottom: 100px;
+}
+
+section.cv ul {
+   list-style-position: inside;
+   list-style-type: none;
+}
+
+section.cv ul li {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+/* BACKGROUND COLOR */
+
+section.cv {
+  background-color: #474e5d;
+  padding: 100px 0;
+}
+
+/* VERTICAL RULER */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* CONTAINER AROUND CONTENT */
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* CIRCLES */
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid dodgerblue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* LEFT CONTAINERS */
+
+.left {
+  left: 0;
+}
+
+/* RIGHT CONTAINERS */
+
+.right {
+  left: 50%;
+}
+
+/* ARROWS LEFT CONTAINERS (POINTING RIGHT) */
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* ARROWS RIGHT CONTAINERS (POINTING LEFT) */
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 0;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* FIX THE CIRCLE FOR RIGHT CONTAINERS */
+
+.right::after {
+  left: -16px;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* MQ TIMELINE SCREENS BIGGER THAN 650PX */
+
+@media screen and (max-width: 650px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+ }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}

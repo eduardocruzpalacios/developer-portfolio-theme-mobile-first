@@ -1,0 +1,9 @@
+/* TIPOGRAPHY */
+
+nav div.home, h1, footer {
+    font-family: 'Itim', cursive;
+}
+
+nav div.nav_menu, section {
+    font-family: 'Lato', sans-serif;
+}
